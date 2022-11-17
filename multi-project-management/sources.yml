@@ -1,0 +1,27 @@
+# an example of a sources.yml for upstream projects. 
+# Use codegen.generate_source to get latest sources
+# Downstream profiles need read access to upstream production data
+
+
+version: 2
+
+
+sources:
+  - name: staging
+    database: sa_isabela_1
+    tables:
+      - name: current_role
+      - name: fresher_stg_tpch_orders
+      - name: new_orders
+      - name: preview_snapshot
+      - name: snowflake_orders
+      - name: stg_tpch_customers
+      - name: stg_tpch_line_items
+      - name: stg_tpch_nations
+      - name: stg_tpch_orders
+      - name: stg_tpch_part_suppliers
+      - name: stg_tpch_parts
+      - name: stg_tpch_regions
+      - name: stg_tpch_suppliers
+
+
