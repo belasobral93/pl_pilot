@@ -1,0 +1,16 @@
+#a guide for how you should configure the schemas and/or databases for your upstream and downstream projects so you avoid model duplication
+
+models:
+  #Define this here to ensure models aren't being duplicated in dev schema.
+  tpch: #upstream project name, defined in project.yml
+    staging: # will look for models/staging 
+      +database: SA_ISABELA_1
+      +schema: STAGING
+  spoke2:
+    +persist_docs:
+      relation: True
+      columns: True
+      # will push down table and column descriptions to Snowflake
+    intermediate:
+      +schema: marts
+
