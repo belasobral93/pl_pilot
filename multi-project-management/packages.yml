@@ -1,0 +1,5 @@
+#an example of how to import an upstream project. See docs for more guidance: https://docs.getdbt.com/docs/build/packages#private-packages
+
+
+packages:
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/belasobral93/snowflake_demo.git" # git HTTPS URL
