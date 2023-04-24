@@ -1,4 +1,4 @@
--- configure this as a pre-hook 
+-- configure this as a pre-hook. Example below:
 
 -- tpch:
    --  +pre-hook:
