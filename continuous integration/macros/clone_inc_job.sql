@@ -1,10 +1,8 @@
-<!-- 
-configure this as a pre-hook 
+-- configure this as a pre-hook 
 
-tpch:
-    +pre-hook:
-      - " {{ clone_inc_job(from_db='production_db', from_schema='production_schema') }} "
--->
+-- tpch:
+   --  +pre-hook:
+    --   - " {{ clone_inc_job(from_db='production_db', from_schema='production_schema') }} "
 
 {% macro clone_inc_job(from_db, from_schema) %}
 
